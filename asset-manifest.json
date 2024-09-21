@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/crm/static/css/main.7afd921a.css",
+    "main.js": "/crm/static/js/main.02deaa2f.js",
+    "index.html": "/crm/index.html",
+    "main.7afd921a.css.map": "/crm/static/css/main.7afd921a.css.map",
+    "main.02deaa2f.js.map": "/crm/static/js/main.02deaa2f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7afd921a.css",
+    "static/js/main.02deaa2f.js"
+  ]
+}
