@@ -1,0 +1,37 @@
+/* src/components/UserModal.css */
+
+.user-modal-content {
+  width: 100%;
+  max-width: 500px;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.user-form input[type="text"],
+.user-form input[type="file"] {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.photo-preview,
+.background-preview {
+  margin-top: 10px;
+}
+
+.photo-preview img,
+.background-preview img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}

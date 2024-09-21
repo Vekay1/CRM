@@ -1,0 +1,60 @@
+/* src/components/TaskList.css */
+
+.task-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  padding: 10px;
+  border-bottom: 1px solid #000000;
+  position: relative;
+}
+
+.task-list li:last-child {
+  border-bottom: none;
+}
+
+.task-tiles .tiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.task-tiles .task-tile {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 900px) {
+  .task-tiles .task-tile {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .task-tiles .task-tile {
+    width: 100%;
+  }
+}
+
+.task-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.task-table th,
+.task-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.task-table th {
+  background-color: #25a6af;
+  text-align: left;
+}

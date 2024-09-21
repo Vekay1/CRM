@@ -1,0 +1,95 @@
+/* src/components/TaskItem.css */
+
+/* Стилі для спискового вигляду */
+.task-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.task-info {
+  flex: 1;
+}
+
+.task-actions {
+  display: flex;
+  flex-direction: column; /* Кнопки розташовуються вертикально */
+  gap: 5px; /* Відступ між кнопками */
+}
+
+/* Кнопка "Виконати" */
+.complete-button {
+  background-color: #4caf50; /* Зелений колір */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.complete-button:hover {
+  background-color: #45a049;
+}
+
+/* Кнопка "Видалити" */
+.delete-button {
+  background-color: #f44336; /* Червоний колір */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Стилі для плиткового вигляду */
+.task-tile {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-tile h3 {
+  margin-top: 0;
+}
+
+.task-tile.completed-task {
+  background-color: #e0e0e0;
+  text-decoration: line-through;
+  color: #555;
+}
+
+.task-tile .task-actions {
+  display: flex;
+  flex-direction: column; /* Вирівнювання кнопок вертикально */
+  gap: 5px; /* Відступ між кнопками */
+}
+
+.task-tile .complete-button {
+  background-color: #4caf50; /* Зелений колір */
+}
+
+.task-tile .delete-button {
+  background-color: #f44336; /* Червоний колір */
+}
+
+.completed-task h3,
+.completed-task p {
+  text-decoration: line-through;
+  color: #555;
+}
